@@ -1,9 +1,13 @@
-create table app_users(
+
+CREATE TABLE app_users(
     id BIGSERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
     cpf VARCHAR(255) UNIQUE NOT NULL,
+    role VARCHAR(30) NOT NULL DEFAULT 'USER',
     password VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
-)
+    CONSTRAINT check_role CHECK ( role IN ('USER','LOJISTA', 'ADMIN'))
+
+);

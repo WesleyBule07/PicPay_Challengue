@@ -1,14 +1,12 @@
 package com.picpay.dev_challengue.challengue.dtos.response;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import com.picpay.dev_challengue.challengue.enums.UserRole;
 
 public record UserResponseDTO(
 
         Long id,
         String name,
-        String email
+        String email,
+        UserRole role
 ){
 }

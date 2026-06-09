@@ -19,6 +19,7 @@ public class UserMapper {
         user.setEmail(request.email());
         user.setPassword(passwordEncoder.encode(request.password()));
         user.setCpf(request.cpf());
+        user.setRole(request.role());
 
         return user;
     }
@@ -27,7 +28,8 @@ public class UserMapper {
         return new UserResponseDTO(
                 user.getId(),
                 user.getName(),
-                user.getCpf()
+                user.getCpf(),
+                user.getRole()
         );
     }
 
