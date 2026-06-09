@@ -4,7 +4,10 @@ import com.picpay.dev_challengue.challengue.dtos.request.UserRequestDTO;
 import com.picpay.dev_challengue.challengue.dtos.response.UserResponseDTO;
 import com.picpay.dev_challengue.challengue.models.AppUser;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 
+
+@Service
 public class UserMapper {
 
     private final PasswordEncoder passwordEncoder;

@@ -4,10 +4,6 @@ package com.picpay.dev_challengue.challengue.models;
 import com.picpay.dev_challengue.challengue.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.Data;
-import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.scheduling.annotation.EnableScheduling;
-
-import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "app_users")

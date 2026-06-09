@@ -11,3 +11,4 @@ CREATE TABLE app_users(
     CONSTRAINT check_role CHECK ( role IN ('USER','LOJISTA', 'ADMIN'))
 
 );
+
