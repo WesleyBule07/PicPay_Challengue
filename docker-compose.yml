@@ -1,0 +1,6 @@
+services:
+  backend:
+    image: wesleybule/picpay-challengue
+
+    ports:
+      - "8080:8080"
